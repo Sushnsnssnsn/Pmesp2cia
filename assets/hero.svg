@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#300606"/><stop offset="1" stop-color="#090101"/></linearGradient></defs>
+<rect width="1600" height="900" fill="url(#g)"/>
+<g opacity=".20" fill="none" stroke="#ef4444" stroke-width="4">
+<path d="M0 700 C260 620 420 760 700 670 S1120 520 1600 610"/>
+<path d="M0 780 C260 700 420 840 700 750 S1120 600 1600 690"/>
+<path d="M0 250 C260 170 460 260 720 210 S1150 90 1600 180"/>
+</g>
+<g opacity=".20" fill="#facc15">
+<circle cx="1260" cy="230" r="150"/><circle cx="1370" cy="360" r="70"/>
+</g>
+<text x="930" y="540" fill="#ffffff" opacity=".08" font-size="170" font-family="Arial" font-weight="900">2ª CIA</text>
+</svg>
