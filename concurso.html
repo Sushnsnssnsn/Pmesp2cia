@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Concurso | 2ª CIA PM RP</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="topbar"><div class="container"><span>Portal fictício de GTA RP</span><span>2ª Companhia da Polícia Militar RP</span></div></div>
+<header class="navbar">
+  <div class="container nav-content">
+    <a class="brand" href="index.html"><div class="logo">2ª</div><div><strong>2ª CIA PM</strong><span>Comando Operacional RP</span></div></a>
+    <button class="mobile-btn" onclick="toggleMenu()">MENU</button>
+    <nav class="menu" id="menu">
+      <a href="index.html">Início</a>
+      <a href="painel.html">Painel</a>
+      <a href="institucional.html">Institucional</a>
+      <a href="hierarquia.html">Hierarquia</a>
+      <a href="concurso.html">Concursos</a>
+      <a href="boletins.html">Boletins</a>
+      <a href="prisoes.html">Prisões</a>
+      <a href="intranet.html">Intranet</a>
+      <a href="ouvidoria.html">Ouvidoria</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Concurso de Ingresso</h1>
+    <p>Prova com 20 perguntas de nível médio/alto sobre conduta policial, patrulhamento, abordagem, legalidade, ética e preservação da ordem pública.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="notice" style="border-radius:14px;margin-bottom:28px">
+      Nota mínima para aprovação: 16/20.
+    </div>
+
+    <form class="form" onsubmit="corrigirConcurso(event)">
+      <div class="grid">
+        <div>
+          <label>Nome</label>
+          <input class="input" id="nome" required placeholder="Seu nome">
+        </div>
+        <div>
+          <label>ID / Registro</label>
+          <input class="input" required placeholder="Ex: 123">
+        </div>
+        <div>
+          <label>Discord</label>
+          <input class="input" required placeholder="usuario#0000">
+        </div>
+      </div>
+
+      <br>
+      <div class="card"><h3>1. Durante o patrulhamento ostensivo, a principal finalidade da presença policial é:</h3><p><label><input type="radio" name="q1" value="a" required> A) Aumentar a quantidade de abordagens sem critério</label></p><p><label><input type="radio" name="q1" value="b" required> B) Prevenir infrações, preservar a ordem pública e aumentar a sensação de segurança</label></p><p><label><input type="radio" name="q1" value="c" required> C) Substituir todos os demais órgãos públicos</label></p></div>
+<div class="card"><h3>2. Em uma abordagem policial, a conduta mais adequada é:</h3><p><label><input type="radio" name="q2" value="a" required> A) Iniciar a ação sem verbalização</label></p><p><label><input type="radio" name="q2" value="b" required> B) Dispensar atenção ao ambiente ao redor</label></p><p><label><input type="radio" name="q2" value="c" required> C) Manter segurança, verbalização clara, técnica e respeito aos direitos da pessoa abordada</label></p></div>
+<div class="card"><h3>3. O princípio da legalidade significa que o policial deve:</h3><p><label><input type="radio" name="q3" value="a" required> A) Atuar dentro do que a lei permite e determina</label></p><p><label><input type="radio" name="q3" value="b" required> B) Agir conforme sua vontade pessoal</label></p><p><label><input type="radio" name="q3" value="c" required> C) Aplicar punições sem procedimento</label></p></div>
+<div class="card"><h3>4. Ao chegar primeiro em uma ocorrência grave, a prioridade inicial deve ser:</h3><p><label><input type="radio" name="q4" value="a" required> A) Divulgar informações sem confirmação</label></p><p><label><input type="radio" name="q4" value="b" required> B) Preservar a vida, avaliar riscos, acionar apoio e isolar o local quando necessário</label></p><p><label><input type="radio" name="q4" value="c" required> C) Encerrar a ocorrência sem registro</label></p></div>
+<div class="card"><h3>5. Em relação ao uso progressivo da força, é correto afirmar que:</h3><p><label><input type="radio" name="q5" value="a" required> A) A força máxima deve ser usada sempre</label></p><p><label><input type="radio" name="q5" value="b" required> B) A verbalização nunca é necessária</label></p><p><label><input type="radio" name="q5" value="c" required> C) A força deve ser proporcional, necessária e compatível com a ameaça apresentada</label></p></div>
+<div class="card"><h3>6. Na preservação de local de crime, o policial deve:</h3><p><label><input type="radio" name="q6" value="a" required> A) Isolar a área, evitar contaminação de vestígios e controlar o acesso</label></p><p><label><input type="radio" name="q6" value="b" required> B) Permitir entrada de curiosos</label></p><p><label><input type="radio" name="q6" value="c" required> C) Mexer em objetos para organizar o ambiente</label></p></div>
+<div class="card"><h3>7. Uma comunicação de rádio eficiente deve ser:</h3><p><label><input type="radio" name="q7" value="a" required> A) Longa, informal e com brincadeiras</label></p><p><label><input type="radio" name="q7" value="b" required> B) Clara, objetiva, padronizada e com informações essenciais</label></p><p><label><input type="radio" name="q7" value="c" required> C) Feita apenas depois do fim da ocorrência</label></p></div>
+<div class="card"><h3>8. Em perseguição ou acompanhamento, a equipe deve considerar principalmente:</h3><p><label><input type="radio" name="q8" value="a" required> A) Somente a captura imediata</label></p><p><label><input type="radio" name="q8" value="b" required> B) A quantidade de viaturas disponíveis, sem avaliar risco</label></p><p><label><input type="radio" name="q8" value="c" required> C) Segurança de terceiros, comunicação, proporcionalidade e autorização/coordenação operacional</label></p></div>
+<div class="card"><h3>9. A hierarquia e a disciplina na atividade policial servem para:</h3><p><label><input type="radio" name="q9" value="a" required> A) Organizar o serviço, definir responsabilidades e manter a eficiência operacional</label></p><p><label><input type="radio" name="q9" value="b" required> B) Permitir abuso de autoridade</label></p><p><label><input type="radio" name="q9" value="c" required> C) Impedir qualquer comunicação entre subordinados</label></p></div>
+<div class="card"><h3>10. Em uma ocorrência com vítima ferida, a primeira preocupação deve ser:</h3><p><label><input type="radio" name="q10" value="a" required> A) Guardar a viatura</label></p><p><label><input type="radio" name="q10" value="b" required> B) Garantir segurança da cena e acionar socorro adequado</label></p><p><label><input type="radio" name="q10" value="c" required> C) Interrogar a vítima por longo tempo</label></p></div>
+<div class="card"><h3>11. A abordagem fundada em atitude suspeita deve ser baseada em:</h3><p><label><input type="radio" name="q11" value="a" required> A) Aparência pessoal isolada</label></p><p><label><input type="radio" name="q11" value="b" required> B) Opinião sem contexto</label></p><p><label><input type="radio" name="q11" value="c" required> C) Elementos objetivos, comportamento, circunstâncias do local e situação observada</label></p></div>
+<div class="card"><h3>12. O relatório ou boletim de ocorrência deve conter:</h3><p><label><input type="radio" name="q12" value="a" required> A) Informações claras, objetivas, horários, envolvidos, providências e fatos observados</label></p><p><label><input type="radio" name="q12" value="b" required> B) Opiniões pessoais sem fundamento</label></p><p><label><input type="radio" name="q12" value="c" required> C) Somente o nome do policial</label></p></div>
+<div class="card"><h3>13. Quando houver resistência do abordado, a equipe deve:</h3><p><label><input type="radio" name="q13" value="a" required> A) Agir sem técnica</label></p><p><label><input type="radio" name="q13" value="b" required> B) Escalonar a resposta conforme risco, solicitar apoio e preservar a integridade de todos</label></p><p><label><input type="radio" name="q13" value="c" required> C) Abandonar imediatamente o local</label></p></div>
+<div class="card"><h3>14. Em policiamento comunitário, uma boa prática é:</h3><p><label><input type="radio" name="q14" value="a" required> A) Evitar contato com a população</label></p><p><label><input type="radio" name="q14" value="b" required> B) Tratar todo cidadão como suspeito</label></p><p><label><input type="radio" name="q14" value="c" required> C) Aproximar-se da comunidade, ouvir demandas e fortalecer a confiança institucional</label></p></div>
+<div class="card"><h3>15. O dever de urbanidade no atendimento ao cidadão exige:</h3><p><label><input type="radio" name="q15" value="a" required> A) Respeito, educação e postura profissional mesmo em situações de tensão</label></p><p><label><input type="radio" name="q15" value="b" required> B) Gritos e humilhações para impor autoridade</label></p><p><label><input type="radio" name="q15" value="c" required> C) Falta de identificação funcional</label></p></div>
+<div class="card"><h3>16. Em ocorrência envolvendo arma de fogo, a conduta operacional deve priorizar:</h3><p><label><input type="radio" name="q16" value="a" required> A) Aproximação descuidada</label></p><p><label><input type="radio" name="q16" value="b" required> B) Cobertura, segurança, comunicação, contenção e avaliação técnica do risco</label></p><p><label><input type="radio" name="q16" value="c" required> C) Aglomeração ao redor do suspeito</label></p></div>
+<div class="card"><h3>17. A revista pessoal deve ocorrer quando:</h3><p><label><input type="radio" name="q17" value="a" required> A) Sempre, sem motivo</label></p><p><label><input type="radio" name="q17" value="b" required> B) Nunca, mesmo diante de risco</label></p><p><label><input type="radio" name="q17" value="c" required> C) Houver fundada suspeita ou situação que justifique a medida conforme a legalidade</label></p></div>
+<div class="card"><h3>18. Ao conduzir uma pessoa à autoridade competente, a equipe deve:</h3><p><label><input type="radio" name="q18" value="a" required> A) Registrar os fatos, preservar direitos, informar motivo e manter integridade física do conduzido</label></p><p><label><input type="radio" name="q18" value="b" required> B) Omitir informações do registro</label></p><p><label><input type="radio" name="q18" value="c" required> C) Aplicar punição por conta própria</label></p></div>
+<div class="card"><h3>19. Em uma ocorrência com muitas pessoas no local, a primeira medida tática recomendada é:</h3><p><label><input type="radio" name="q19" value="a" required> A) Entrar no meio da multidão sem apoio</label></p><p><label><input type="radio" name="q19" value="b" required> B) Controlar perímetro, identificar riscos e organizar a atuação da equipe</label></p><p><label><input type="radio" name="q19" value="c" required> C) Ignorar testemunhas e vítimas</label></p></div>
+<div class="card"><h3>20. A conduta ética do policial exige:</h3><p><label><input type="radio" name="q20" value="a" required> A) Favorecer amigos e conhecidos</label></p><p><label><input type="radio" name="q20" value="b" required> B) Expor dados sensíveis sem necessidade</label></p><p><label><input type="radio" name="q20" value="c" required> C) Imparcialidade, responsabilidade, sigilo quando necessário e respeito aos direitos fundamentais</label></p></div>
+
+
+      <button class="btn btn-primary" type="submit">Enviar prova</button>
+      <div id="resultado" class="result"></div>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div><strong>2ª Companhia da Polícia Militar RP</strong><p style="margin-top:10px;line-height:1.6">Projeto fictício criado para organização de roleplay no GTA RP. Sem vínculo com órgãos públicos reais.</p></div>
+    <div><strong>Setores</strong><p>Comando<br>Recrutamento<br>Corregedoria<br>Boletins</p></div>
+    <div><strong>Portal</strong><p>Intranet<br>Concursos<br>Comunicação<br>Hierarquia</p></div>
+  </div>
+  <div class="container copy">© 2026 — 2ª CIA PM RP</div>
+</footer><script src="assets/script.js"></script>
+
+</body>
+</html>
